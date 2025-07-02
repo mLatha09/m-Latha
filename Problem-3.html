@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Problem 3: Pattern Series</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h2>Problem 3: Pattern Series</h2>
+    <input type="number" id="pattern-num" placeholder="Enter a number" />
+    <button onclick="generatePattern()">Generate</button>
+    <p id="output"></p>
+  </div>
+
+  <script>
+    function generatePattern() {
+      const n = parseInt(document.getElementById("pattern-num").value);
+      let length = n % 2 === 0 ? n - 1 : n;
+      let series = [];
+      for (let i = 0; i < length; i++) {
+        series.push(2 * i + 1);
+      }
+      document.getElementById("output").innerText = series.join(", ");
+    }
+  </script>
+</body>
+</html>

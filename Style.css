@@ -1,0 +1,113 @@
+/* Reset and setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background: #10131a;
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Global Title */
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #0fffc1;
+  text-shadow: 0 0 10px #0fffc1;
+  font-weight: bold;
+}
+
+/* Card Container */
+.card {
+  background: #161a23;
+  border: 1px solid #2c2f3f;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 35px;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 5px 5px 30px rgba(0, 255, 200, 0.1);
+}
+
+/* Section Title */
+.card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #59f8e8;
+  border-left: 5px solid #0fffc1;
+  padding-left: 10px;
+}
+
+/* Inputs and Selects */
+input[type=\"text\"],
+input[type=\"number\"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  font-size: 15px;
+  border-radius: 10px;
+  background: #1f2430;
+  color: #e0e0e0;
+  border: 1px solid #333;
+  outline: none;
+  transition: border 0.3s;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 16px;
+  background: linear-gradient(145deg, #0fffc1, #09c6ab);
+  border: none;
+  border-radius: 10px;
+  color: #10131a;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 255, 200, 0.3);
+}
+
+button:hover {
+  transform: scale(1.03);
+  background: linear-gradient(145deg, #09c6ab, #0fffc1);
+ 
+}
+
+/* Result / Output Text */
+p, #output, #result {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-shadow: 0 0 4px #0fffc1;
+}
+
+/* Output List */
+ul {
+  list-style: none;
+  margin-top: 12px;
+  padding: 0;
+}
+
+ul li {
+  background: #1d2230;
+  padding: 10px;
+  margin: 5px 0;
+  border-left: 5px solid #0fffc1;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #f1f1f1;
+ 
+}
+
+ul li:hover {
+  background: #2a2f40;
+}

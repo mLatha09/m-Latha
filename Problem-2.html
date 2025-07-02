@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Problem 2: Odd Series</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h2>Problem 2: Odd Series Generator</h2>
+    <input type="number" id="odd-num" placeholder="Enter a number" />
+    <button onclick="generateOdd()">Generate</button>
+    <p id="output"></p>
+  </div>
+
+  <script>
+    function generateOdd() {
+      const n = parseInt(document.getElementById("odd-num").value);
+      let series = [];
+      for (let i = 0; i < n; i++) {
+        series.push(2 * i + 1);
+      }
+      document.getElementById("output").innerText = series.join(", ");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Problem 4: Multiples Counter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h2>Problem 4: Count Multiples of 1–9</h2>
+    <input type="text" id="list" placeholder="Enter numbers (e.g. 1,2,3,4)" />
+    <button onclick="countMultiples()">Count</button>
+    <ul id="result"></ul>
+  </div>
+
+  <script>
+    function countMultiples() {
+      const nums = document.getElementById("list").value
+        .split(",")
+        .map(n => parseInt(n.trim()))
+        .filter(n => !isNaN(n));
+      let result = {};
+      for (let i = 1; i <= 9; i++) {
+        result[i] = nums.filter(n => n % i === 0).length;
+      }
+      const ul = document.getElementById("result");
+      ul.innerHTML = '';
+      for (const key in result) {
+        const li = document.createElement("li");
+        li.innerText = `${key}: ${result[key]}`;
+        ul.appendChild(li);
+      }
+    }
+  </script>
+</body>
+</html>

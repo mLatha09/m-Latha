@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Problem 1: Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h2>Problem 1: Calculator</h2>
+    <input type="number" id="a" placeholder="Enter a" />
+    <input type="number" id="b" placeholder="Enter b" />
+    <select id="op">
+      <option value="add">Add</option>
+      <option value="sub">Subtract</option>
+      <option value="mul">Multiply</option>
+      <option value="div">Divide</option>
+    </select>
+    <button onclick="calculate()">Calculate</button>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    function calculate() {
+      const a = parseFloat(document.getElementById("a").value);
+      const b = parseFloat(document.getElementById("b").value);
+      const op = document.getElementById("op").value;
+      let result;
+      if (op === "add") result = a + b;
+      else if (op === "sub") result = a - b;
+      else if (op === "mul") result = a * b;
+      else if (op === "div") result = b !== 0 ? a / b : "Divide by 0 error";
+      document.getElementById("result").innerText = "Result: " + result;
+    }
+  </script>
+</body>
+</html>
