@@ -1,14 +1,16 @@
-# M Latha 
+# M Latha
 
-This repository contains the solutions for the **Tandemloop Full Stack Developer Screening Test** (Stage-1). All 4 problems are solved using **HTML, CSS, and JavaScript**, following the instructions provided by the company.
+This repository contains four mini-projects developed using **HTML, CSS, and JavaScript**. Each problem demonstrates frontend logic, UI implementation, and structured coding in a browser environment.
 
 ---
 
-## 📌 Candidate Details
+## 📌 Developer Info
 
 - **Name:** M Latha  
-- **Position Applied For:** Full Stack Developer  
-- **Test Language Used:** HTML, CSS, JavaScript (Vanilla)
+- **Technologies Used:**  
+  - `HTML` – Structure and content layout  
+  - `CSS` – Styling and responsive dark theme UI  
+  - `JavaScript (Vanilla)` – Logic handling, dynamic DOM manipulation  
 
 ---
 
